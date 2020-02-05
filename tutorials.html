@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/pages.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> <!--Font from "FontJoy.com"-->
+
+    <title>Tutorials</title>
+</head>
+<body>
+    
+    <!--Start of nav-->
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"><img id="logo" src="logos/JoshuaTullyLogo2.png" alt="JoshuaTullyLogo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/jtully97">GitHub</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/joshua-tully/">LinkedIn</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Favorite Sites
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="https://www.youtube.com/">youTube</a>
+                <a class="dropdown-item" href="https://www.w3schools.com/">W3Schools</a>
+                <a class="dropdown-item" href="https://stackoverflow.com/">Stack Overflow</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>    
+    <!--end of nav-->
+
+    <!--start of jumbotron-->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Tutorials</h1>
+            <p class="lead">Here you can find tutorials on all things dicussed within IT 354.</p>
+        </div>
+    </div>
+    <!--end of jumbotron-->     
+
+    <!--start of main content-->      
+
+    <!-- code segment below is used for new tutorial entries.
+    <div class="row">
+
+        <div class="col-md-6">
+          <h2>Title</h2>
+        </div>
+
+        <div class="col-md-6">
+          <h2>**Video Goes here**</h2>
+        </div>
+
+      </div> 
+    -->
+
+    <div class="mainContent">
+        
+      <div class="row">
+
+        <div class="col-md-12">
+          <h2>Values and Types</h2>
+          <p>
+            Javascript has 5 data types that are passed by values, such as... <br>
+            Boolean, Number, String, null and undefined.
+          </p>
+          <img src="images/TypesAndValues.png" alt="TypesAndValuesImage">
+          <p>
+            Down to the basics, a type helps group similar values to which common operators can be used.
+            with simple mathmatical knowledge, it is easy to identify that 14, 18, 22, 30, 9, and 97 can be added to eachother to gain a sum of numbers.
+            We also know that 97 cannot be added to the letter "J" to create a sum of the two.
+          </p>
+          <p>
+            thats where type comes into the picture. In order to have direct change of a type using a operand,
+            one must use the same type for each value.
+          </p>
+        </div>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HjK95sVlcGA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-12">
+          <h2>Unary Operators</h2>
+          <p>
+            In terms of simplicity, the most simple of operators in JavaScript are unary operators. A unary operator works on one operand. <br>
+            The unary operators in JavaScript are:
+            <ul>
+              <li>Unary plus(+) - convert an operand into a number.</li>
+              <li>Unary minus(-) - convert an operand into a number and negate the following.</li>
+              <li>Increments (++) - add one to operand</li>
+              <li>Decrement (--) - subtract one from operand</li>
+              <li>Logical Not (!) - Converts to boolean value then negates it</li>
+              <li>Bitwise not (~) - Inverts all the bits in the operand and returns a number</li>
+              <li>typeof - comes before the operand, this returns a string of the data type of the operand.</li>
+              <li>delete - Deletes specific index of an array or specific property of an object</li>
+              <li>Void operator - Discards a return value of an expression</li>
+
+            </ul>
+          </p>
+
+          <h4>Unary plus / minus</h4>
+          <p>You can place the Unary plus / minus infront of variables as follows.</p>
+          <img src="images/plusMinus.png" alt="plus and minus">
+          <p>you can convert boolean values into numbers, the following code takes the boolean values t and f, and turns them into numbers.</p>
+          <img src="images/BooleanToNumber.png" alt="Boolean to number">
+
+          <h4>Increment / Decrements operators</h4>
+          <p>Both of the increment and decrement operators have two versions: prefix and postfix.</p>
+          <p>The following code shows how to add 1 to a variable by using the prefix increment operator.</p>
+          <img src="images/prefixIncrementOperand.png" alt="prefix increment operator">
+          <p>The decrement operator used as a prefix, subtracts one from a value:</p>
+          <img src="images/prefixDecrement.png" alt="prefix decrement operator">
+          <p>The postfix versions of increment and decrement have the same forms: ++ and -- but are placed after each variable.</p>
+          <p>the difference between prefix and postfix is that they dont get evaluated until the containing statement has been evaluated.</p>
+          <p>This may sound like it has no effect but it is not clear until you use postfixes with other operations.</p>
+
+          <h4>Logical not</h4>
+          <p>This operator is placed before the operand. it converts the operand into its boolean equivalent before negating it.</p>
+          <img src="images/notOperator.png" alt="demo of not operator.">
+
+          <h4>Bitwise not</h4>
+          <p>Performs a bianary NOT operation, this operator inverts all the bits in the operand and then returns a number.</p>
+          <img src="images/bitwise.png" alt="Bitwise not">
+
+          <h4>typeof</h4>
+          <p>This operator comes before the operand. it returns a string indicating the data type of the operand.</p>
+          <img src="images/typeof.png" alt="typeof operator">
+
+          <h4>delete</h4>
+          <p>This operator is placed before the operand. it deletes the values of a specified index of an array and a specific property of a given object.</p>
+          <img src="images/delete.png" alt="delete operator">
+
+          <h4>Void operator</h4>
+          <p>It precedes an operation. It discards the return value of an expression, meaning it evaluates an expression but then returns undefined.</p>
+          <p>The void operator is useful to specify an expression as a hypertext link. The expression is evaluated but does not loaded in place of the current document.</p>
+        </div>
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nDdkKIclZHQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-12">
+          <h2>Hoisting</h2>
+          <p>Hoisting is Javascripts default behavior of moving declerations to the top.</p> 
+          <p>Variables in Javascript can be declared after they have already been used.</p>
+          <p>In simple terms. A variable can be used before it has been declared.</p>
+          <h5>Hoisting continued...</h5>
+          <p>when Javascript compiles code, all of the variables that were declared using var are hoisted to the top of the functions scope, granted the decleration happened outside 
+            of the function.
+          </p>
+          <p>This is shown in the following code snip it:</p>
+          <img src="images/Hoisting1.png" alt="hoisting example 1">
+          <p>A key thing to keep in mind is that the only thing that gets moved to the top is the declarations of the variable, not the actual value of the variable.</p>
+        </div>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GDmlMCICUrA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+      </div>
+    </div>
+    
+
+    <!--end of main content-->        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+.mainContent{
+
+    margin-left: 8%;
+
+    margin-right: 8%;
+    
+
+}
+
+.contentBox{
+
+    background-color: #ffffff;
+
+
+}
+
+.textBox{
+
+    margin-top: 20px;
+
+    margin-right: 20px;
+
+    margin-bottom: 20px;
+
+    margin-left: 20px;
+}
+
+h1,h2,h3,h4,h5,h6{
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.row{
+    margin-top: 10px;
+
+    margin-bottom: 25px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    background-color: #ffffff;
+}
+
+body{
+
+    background-color: #c9d1d3;
+}
+img{
+    padding-bottom: 15px;
+}
+iframe{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}

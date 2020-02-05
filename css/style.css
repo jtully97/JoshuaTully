@@ -1,0 +1,119 @@
+/* start of nav bar */
+
+
+/* end of nav bar */
+
+/* start of jumbotron */
+.jumbotron {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background-color:#1B262C;
+
+    height: 380px;
+
+  }
+
+  .jumbotron video {
+
+    position: absolute;
+
+    z-index: 1;
+
+    top: 0;
+
+    height: 100%;
+
+    width: 100%;
+ 
+    /*  object-fit is not supported on IE  */
+    object-fit: cover;
+
+    opacity:0.5;
+
+  }
+
+  .jumbotron .container {
+
+    z-index: 2;
+
+    position: relative;
+    
+  }
+
+/* end of jumbotron */
+
+/* start of body */
+html{
+
+    width: 100%;
+
+    height: 100%;
+
+    margin: 0px;
+
+    padding: 0px;
+
+    overflow-x: hidden; 
+
+    background-color: #1B262C; 
+
+}
+body{
+
+    background-color: #1B262C; 
+
+    width: 100%;
+
+    height: 100%;
+
+    margin: 0px;
+
+    padding: 0px;
+
+    overflow-x: hidden; 
+}
+.card{
+
+    background-color: #E5DFDF;
+
+    text-align: center;
+
+    border: none;
+
+    margin-bottom: 10px;
+
+}
+.card-img-top{
+
+    height: 20%;
+
+    width: 20%;
+
+    padding-top: 10px;
+    
+}
+.card-title{
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: xx-large;
+
+}
+
+.card-text{
+
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.row{
+
+    margin-left: 10px;
+
+    margin-right: 10px;
+    
+}
+/* end of body */
