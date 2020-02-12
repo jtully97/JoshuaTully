@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/pages.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> <!--Font from "FontJoy.com"-->
+    
+    <title>Class Lessons</title>
+</head>
+<body>
+    <!-- Start of nav -->
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="./index.html"><img id="logo" src="logos/JoshuaTullyLogo2.png" alt="JoshuaTullyLogo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="websiteInfo.html">Website Info</a>
+              <!-- <a class="nav-link" href="https://github.com/jtully97">GitHub</a> -->
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                My Work
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="articles.html">Articles</a> 
+                <a class="dropdown-item" href="tutorials.html">Tutorials</a>
+                <a class="dropdown-item" href="classLessons.html">Class Lessons</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="personal.html">Personal</a>
+              <!-- <a class="nav-link" href="https://www.linkedin.com/in/joshua-tully/">LinkedIn</a> -->
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0" method="GET" action="http://www.google.com/search">      
+            <input class="form-control mr-sm-2" type="text" name="q" placeholder="Search Google" aria-label="Go!">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+
+    <!-- End of nav -->
+
+    <!--start of jumbotron-->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Class Lessons</h1>
+            <p class="lead">Here you can find information on lessons taught within class</p>
+        </div>
+    </div>
+    <!--end of jumbotron-->
+
+    <!-- Start of main content -->
+    <div class="mainContent">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Functions</h2>
+                <p>
+                    A JavaScript function is a block of code designed to perform a specific task.<br>
+                    A JavaScript function is executed when something invokes it aka calling it.
+                </p>
+                <h4>Named Functions</h4>
+                <p>
+                    Named functions are functions that recieve a name upon creation. <br>
+                    They have several advantages to their counterpart (anonymous functions).
+                    one advatage is readability, since you have to name it, you end up having to make it more understandable to 
+                    developers of all skill levels. They also are very useful for identifying what functions cause errors
+                    during development. <br>
+                    Named functions are also easier to reuse. When a function is named it makes it easier for developers to 
+                    grasp what the exact function is doing and implement it for similar use cases.
+                </p>
+                <p>
+                    The code snippet bellow is a real simple example of naming a function, there is no action within the function,
+                    but you can see how the function is given a name that can be referenced and used.
+                </p>
+                <img class="centeredImg" src="images/nameFunction.png" alt="Named function example">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/71o0lJbtluE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <hr>
+
+                <h4>Function Expression</h4>
+                <p>
+                    A JavaScript function can also be defined using an expression. <br>
+                    A function expression is very similar to a function decleration, one of the biggest diffrences is how the 
+                    browser loads them into the execution context.
+                </p>
+                <p>
+                    Function declerations load before any code is executed while, function expressions load only
+                    when the interpreter reaches that line of code. So given the case where you try to call a function 
+                    expression before it's loaded, an error will occur. Whereas if you call a function decleration it will 
+                    work because hoisting occurs at run time.
+                </p>
+                <p>
+                    The following code shows an exapmle of a function expression. It throws an error because the function was used
+                    before the function expression was created.
+                </p>
+                <img class="centeredImg" src="images/functionExpression.png" alt="function expression example">
+                <p>
+                    Now the next example shows a function decleration and unlike the function expression, this code will run because 
+                    JavaScript uses hoisiting in decleartions so at run time the function is instantiated for later use. 
+                </p>
+                <img class="centeredImg" src="images/functionDecleration.png" alt="function decleartion example">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kiftjEXkixA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <hr>
+
+                <h4>Arrow Functions</h4>
+                <p>
+                    Arrow functions aka "fat arrow" functions, are a simplier syntax for writting function expressions. 
+                    they utilize a new token, =>, kind of looks like a fat arrow right? Arrow function are anonymous and alter the way 
+                    this binds in functions.
+                </p>
+                <p>
+                    arrow functions make our code more concise, and simplify function scoping and the this keyword. By using arrow functions
+                    we bypasss the part of a function where we have to to type function keyword and the return keyword. That is because
+                    it is implicit with arrow functions, and curly brackets.
+                </p>
+                <p>
+                    The following segment of code shows a way an arrow function can be created and used.
+                </p>
+                <img class="centeredImg" src="images/arrowFunction.png" alt="arrow function example">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/nIvY7sR5lAU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <h6>Sources</h6>
+                <p class="sourcePTag">
+                    <a href="https://www.w3schools.com/js/js_functions.asp">W3Schools</a><br>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/name">Mozilla</a><br>
+                    <a href="https://www.linkedin.com/pulse/javascript-named-vs-anonymous-functions-chris-ng/">Linkedin</a>
+                    <a href="https://stackoverflow.com/questions/1013385/what-is-the-difference-between-a-function-expression-vs-declaration-in-javascrip">stackoverflow</a><br>
+                    <a href="https://www.sitepoint.com/es6-arrow-functions-new-fat-concise-syntax-javascript/">sitepoint.com</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Optional Arguments</h2>
+                <p>
+                    Optional arumguments are function parameters that are given default values if not used when calling a function.
+                    Optional parameters are wonderful at simplifying code, and hiding advanced functionality that is not often used.
+                    If a majority of the time you're calling a function using the same values for some parameters, it would be good to
+                    consider making those parameters optional to avoid repeating code.
+                </p>
+                <p>
+                    The following code segment shows an optional argument in use.
+                </p>
+                <img class="centeredImg" src="images/optionalArguments.png" alt="optional argument example">
+                <h6>Sources</h6>
+                <p class="sourcePTag">
+                    <a href="https://www.markhansen.co.nz/javascript-optional-parameters/">markhansen.co</a><br>
+                    <a href="https://www.afterhoursprogramming.com/tutorial/javascript/optional-arguments/">afterhoursprogramming.com</a><br>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Rest Parameters</h2>
+                <p>
+                    The rest parameter syntax allows developers to represent an indefinite number of arguments as an array.
+                    with the help of a rest parameter a function can be called with any number of arguments, no matter what way it is
+                    defined.
+                </p>
+                <p>
+                    The following code snippet shows how rest parameters can be used.
+                </p>
+                <img class="centeredImg" src="images/restParameters.png" alt="rest parameters example">
+                <h6>Sources</h6>
+                <p class="sourcePTag">
+                    <a href="https://javascript.info/rest-parameters-spread">javascript.info</a><br>
+                    <a href="https://www.geeksforgeeks.org/javascript-rest-operator/">geeksforgeeks.org</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Scope</h2>
+                <p>
+                    JavaScript has two scopes, global and local. Any variable declared outside of a function belongs to the global
+                    scope and with that is accessible anywhere in the code. Local scope is created within functions, variables created 
+                    within a function are part of the local scope.
+                </p>
+                <h6>Sources</h6>
+                <p class="sourcePTag">
+                    <a href="https://www.sitepoint.com/demystifying-javascript-variable-scope-hoisting/">sitepoint.com</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Nested Functions</h2>
+                <p>
+                    Nested functions in JavaScript are functions created within functions, therefore part of the outter functions local scope.
+                    A nested function can either be returned as a property of a new object or as result by itself.
+                </p>
+                <p>
+                    The following code segment shows how nested functions can be used. This example is a good way of creating a 
+                    random number generator, that can be used for say generating random numbers for test cases.
+                </p>
+                <img class="centeredImg" src="images/nestedFunction.png" alt="nested function example">
+                <h6>Sources</h6>
+                <p class="sourcePTag">
+                    <a href="https://javascript.info/closure">javascript.info</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End of main content -->
+
+    
+</body>
+</html>

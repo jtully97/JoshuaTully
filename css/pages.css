@@ -29,6 +29,8 @@ h1,h2,h3,h4,h5,h6{
 
     font-family: 'Montserrat', sans-serif;
 
+    padding-left: 8%;
+
 }
 
 .row{
@@ -45,10 +47,79 @@ body{
 
     background-color: #c9d1d3;
 }
+
 img{
+
     padding-bottom: 15px;
+    
 }
+
 iframe{
-    padding-left: 20px;
+    
     padding-bottom: 20px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#unaryOperators{
+
+    list-style: none;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    width: 80%;
+
+}
+
+li{
+    margin: 10px 0;
+}
+
+table th, td {
+
+    text-align: center; 
+
+ }
+
+ .mainContent{
+
+     padding-left: 15%;
+
+     padding-right: 15%;
+
+ }
+
+ p{
+     padding-left: 8%;
+
+     padding-right: 8%;
+ }
+ .centeredImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+ }
+
+ .table{
+   
+    margin-left: 8%;
+    margin-right: 8%;
+   
+ }
+
+ h2,h4{
+     text-decoration: underline;
+ }
+ 
+ .sourcePTag{
+
+    font-size: small;
+
+    font-style: italic;
 }

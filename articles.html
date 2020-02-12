@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/pages.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> <!--Font from "FontJoy.com"-->
+   
+    <title>Articles</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="./index.html"><img id="logo" src="logos/JoshuaTullyLogo2.png" alt="JoshuaTullyLogo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="websiteInfo.html">Website Info</a>
+              <!-- <a class="nav-link" href="https://github.com/jtully97">GitHub</a> -->
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                My Work
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="articles.html">Articles</a> 
+                <a class="dropdown-item" href="tutorials.html">Tutorials</a>
+                <a class="dropdown-item" href="classLessons.html">Class Lessons</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="personal.html">Personal</a>
+              <!-- <a class="nav-link" href="https://www.linkedin.com/in/joshua-tully/">LinkedIn</a> -->
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0" method="GET" action="http://www.google.com/search">      
+            <input class="form-control mr-sm-2" type="text" name="q" placeholder="Search Google" aria-label="Go!">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+    <!--start of jumbotron-->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Articles</h1>
+            <p class="lead">Here are some articles on key concepts of web development</p>
+        </div>
+    </div>
+    <!--end of jumbotron-->
+
+    <!-- Start of main content -->
+    <div class="mainContent">
+        <div class="row">
+            <div class="col-md-12">
+            <h1>ECMAscript</h1>
+            <h5>What is ECMAscript?</h5>
+            <p>
+                ECMAscript actually is the primary language that Javascript is based on. Digging into <a href="https://en.wikipedia.org/wiki/JavaScript">Javascript</a> you can see that Javascript is listed as a major implementation of ECMAscript.
+                So Javascript actually comes from ECMAscript. ECMAscript is a standardized specification of JavaScript, developed by Brendan Eich of Netscape; Originally it was called
+                Mocha, followed by LiveScript and then eventually settling as Javascript. So to break it down into simple terms Javascript is basically ECMAscript at its core, but builds upon it.
+                other scripting languages like JScript, and ActionScript, all use ECMAscript as its core as well. A good real world comparison would be the three scripting languages previously stated
+                are all diffrent cars but run on the same motor (ECMAscript).
+            </p>
+            <p>
+                The first edition of ECMA-262 was adopted by the Ecma General Assembley in June of 1997. The name "ECMAscript" was introduced by the organizations involved with standardizing the language,
+                (Netscape & Microsoft). A little funny thing to mention is that Brendan Eich commented that "EchmaScript was always an unwanted trade name that sounds like a skin disease."
+            </p>
+            <p>
+                Currently there are 10 different versions of ECMA-262. Work on the 10th version was finalized in June of 2019, leading to ES.Next which is a dynamic name that refers to whatever the next version
+                of ECMAscript is at the time of writting. The cool thing about ES.Next is that ES.Next features are finished proposals so viewers can in a way speculate about features that 
+                may be arriving to the standard with the next release.
+            </p>
+            <div class="col-md-8">
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Edition</th>
+                    <th scope="col">Release Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>June 1997</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>June 1998</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>December 1999</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Abandoned</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>December 2009</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>June 2015</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>June 2016</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">8</th>
+                    <td>June 2017</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">9</th>
+                    <td>June 2018</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">10</th>
+                    <td>June 2019</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h6>Sources</h6>
+            <p class="sourcePTag">
+                <a href="https://en.wikipedia.org/wiki/ECMAScript">wikipedia</a> <br>
+                <a href="https://medium.com/@madasamy/javascript-brief-history-and-ecmascript-es6-es7-es8-features-673973394df4">Medium.com</a>
+            </p>
+            </div>
+        </div>
+    </div>
+    <!-- End of main content -->
+    
+
+</body>
+</html>

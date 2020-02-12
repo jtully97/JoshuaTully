@@ -24,24 +24,26 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="https://github.com/jtully97">GitHub</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.linkedin.com/in/joshua-tully/">LinkedIn</a>
+              <a class="nav-link" href="websiteInfo.html">Website Info</a>
+              <!-- <a class="nav-link" href="https://github.com/jtully97">GitHub</a> -->
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Favorite Sites
+                My Work
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="https://www.youtube.com/">youTube</a>
-                <a class="dropdown-item" href="https://www.w3schools.com/">W3Schools</a>
-                <a class="dropdown-item" href="https://stackoverflow.com/">Stack Overflow</a>
+                <a class="dropdown-item" href="articles.html">Articles</a> 
+                <a class="dropdown-item" href="tutorials.html">Tutorials</a>
+                <a class="dropdown-item" href="classLessons.html">Class Lessons</a>
               </div>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="personal.html">Personal</a>
+              <!-- <a class="nav-link" href="https://www.linkedin.com/in/joshua-tully/">LinkedIn</a> -->
+            </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <form class="form-inline my-2 my-lg-0" method="GET" action="http://www.google.com/search">      
+            <input class="form-control mr-sm-2" type="text" name="q" placeholder="Search Google" aria-label="Go!">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
@@ -82,9 +84,19 @@
               <div class="card align-items-center">
                 <img class="card-img-top" src="icons/iconfinder_play-circle_383091.png" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Tutorials</h5>
-                  <p class="card-text">Here you can locate tutorials on topics discussed in class.</p>
-                  <a href="tutorials.html" class="btn btn-outline-dark">View</a>
+                  <h5 class="card-title">My Work</h5>
+                  <p class="card-text">Locate assignments</p>
+                  <div class="btn-group dropup">
+                    <button type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      View
+                    </button>
+                    <div class="dropdown-menu">
+                      <!-- Dropdown menu links -->
+                      <a class="dropdown-item" href="articles.html">Articles</a> 
+                      <a class="dropdown-item" href="tutorials.html">Tutorials</a>
+                      <a class="dropdown-item" href="classLessons.html">Class Lessons</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
