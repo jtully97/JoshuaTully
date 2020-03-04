@@ -32,9 +32,10 @@
                 My Work
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="articles.html">Articles</a> 
+                <a class="dropdown-item" href="articles.html">Articles/Essays</a> 
                 <a class="dropdown-item" href="tutorials.html">Tutorials</a>
                 <a class="dropdown-item" href="classLessons.html">Class Lessons</a>
+                <a class="dropdown-item" href="objects.html">Object Talk</a>
               </div>
             </li>
             <li class="nav-item">
@@ -66,55 +67,65 @@
         </div>
       </div>
       <!--End of jumbrotron-->
-
+      
         <div class="row">
           
             <div class="col-sm-4">
-              <div class="card align-items-center">
-                <img class="card-img-top" src="icons/iconfinder_help_172477.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Website Info</h5>
-                  <p class="card-text">Find details on what makes up this website.</p>
-                  <a href="websiteInfo.html" class="btn btn-outline-dark">View </a>
+              <div class="downSlide">
+                <div class="card align-items-center">
+                  <img class="card-img-top" src="icons/iconfinder_help_172477.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Website Info</h5>
+                    <p class="card-text">Find details on what makes up this website.</p>
+                    <a href="websiteInfo.html" class="btn btn-outline-dark">View </a>
+                  </div>
                 </div>
               </div>
             </div>
+          
+              <div class="col-sm-4">
+                <div class="downSlide">
+                  <div class="card align-items-center">
+                    <img class="card-img-top" src="icons/iconfinder_play-circle_383091.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">My Work</h5>
+                      <p class="card-text">Locate assignments</p>
+                      <div class="btn-group dropup">
+                        <button type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          View
+                        </button>
+                        <div class="dropdown-menu">
+                          <!-- Dropdown menu links -->
+                          <a class="dropdown-item" href="articles.html">Articles/Essays</a> 
+                          <a class="dropdown-item" href="tutorials.html">Tutorials</a>
+                          <a class="dropdown-item" href="classLessons.html">Class Lessons</a>
+                          <a class="dropdown-item" href="objects.html">Object Talk</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
             <div class="col-sm-4">
-              <div class="card align-items-center">
-                <img class="card-img-top" src="icons/iconfinder_play-circle_383091.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">My Work</h5>
-                  <p class="card-text">Locate assignments</p>
-                  <div class="btn-group dropup">
-                    <button type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      View
-                    </button>
-                    <div class="dropdown-menu">
-                      <!-- Dropdown menu links -->
-                      <a class="dropdown-item" href="articles.html">Articles</a> 
-                      <a class="dropdown-item" href="tutorials.html">Tutorials</a>
-                      <a class="dropdown-item" href="classLessons.html">Class Lessons</a>
-                    </div>
+              <div class="downSlide">
+                <div class="card align-items-center">
+                  <img class="card-img-top" src="icons/iconfinder_info_172483.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Personal</h5>
+                    <p class="card-text">Take a look into some information about me.</p>
+                    <a href="personal.html" class="btn btn-outline-dark">View</a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-sm-4">
-              <div class="card align-items-center">
-                <img class="card-img-top" src="icons/iconfinder_info_172483.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Personal</h5>
-                  <p class="card-text">Take a look into some information about me.</p>
-                  <a href="personal.html" class="btn btn-outline-dark">View</a>
-                </div>
-              </div>
-            </div>
-
         </div>
+        
     
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script>
@@ -132,7 +143,15 @@
   
   }
   window.onload = deferVideo;
-</script>
+  </script>
+  <script>
+    $(document).ready(function(){
+      $('.downSlide').css('opacity', 0).slideDown(200)
+      .animate(
+    { opacity: 1},
+    { queue: false, duration: 1000 });
+});
+  </script>
 
 </body>
 </html>

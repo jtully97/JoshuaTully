@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/pages.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> <!--Font from "FontJoy.com"-->
+
+    <title>Objects</title>
+
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="./index.html"><img id="logo" src="logos/JoshuaTullyLogo2.png" alt="JoshuaTullyLogo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="websiteInfo.html">Website Info</a>
+              <!-- <a class="nav-link" href="https://github.com/jtully97">GitHub</a> -->
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                My Work
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="articles.html">Articles/Essays</a> 
+                <a class="dropdown-item" href="tutorials.html">Tutorials</a>
+                <a class="dropdown-item" href="classLessons.html">Class Lessons</a>
+                <a class="dropdown-item" href="objects.html">Object Talk</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="personal.html">Personal</a>
+              <!-- <a class="nav-link" href="https://www.linkedin.com/in/joshua-tully/">LinkedIn</a> -->
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0" method="GET" action="http://www.google.com/search">      
+            <input class="form-control mr-sm-2" type="text" name="q" placeholder="Search Google" aria-label="Go!">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+
+    <!-- Start of jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">All About Objects</h1>
+            <p class="lead">Here we will discuss objects in terms of Javascript.</p>
+        </div>
+    </div>
+
+    <!-- Start of body -->
+    <div class="mainContent">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Creating Objects</h1>
+                <p>In javascript an object has properties associated to it, those properties in simple terms are variables attatched to the object.</p>
+                <p>Lets try and relate this to a real life example. Imagine a car, think of all the characteristics about that car, evrything
+                    from make, model, color, year etc. those are properties related to that car, and we can call those the cars variables.
+                </p>
+                <p>Now when writting code involving the creation of several cars, it can become extremely redundant attempting to dynamically create
+                    a car each and every time you want to add a car or alter the cars properties. This is where the creation of a car object helps drastically.
+                </p>
+                <p>Lets create a car object!</p>
+                <img class="centeredImg" src="images/newObject.png" alt="example of creating a new object">
+                <p>The code above creates a new object called car1 that gets stored in a varible. Then properties of the car can be set, which are done 
+                    so with the car1.property, in this case the properties are make, model, color and year. Now there is a car1 object created that can be used within
+                    things like functions and other sorts of data manipulation.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Bracket Notation</h1>
+                <p>Following the example we discussed above about creating car objects lets discuss another way object properties can be accessed and set.</p>
+                <p>This is through the use of bracket notation. Objects are somtimes called associative arrays due to the fact that there is a property that is 
+                    associated through a string value that can be used to access each property.
+                </p>
+                <p>So now lets create another car object that we will call "car2" and set some properties using bracket notation.</p>
+                <img class="centeredImg" src="images/bracketNotation.png" alt="creating a new object using bracket notation">
+                <p>You can see how this variates from the previous creation of a car object. Instead of using the .property, you use the array brackets to access the 
+                    string variable that stores the given property.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Object Literals</h1>
+                <p>Another way to create an object, is through the use of object literals. This is done through the use of object initializers.</p>
+                <p>An object initializer is a way of setting an objects properties and values explicitly. This will be shown in the following code.</p>
+                <img class="centeredImg" src="images/objectLiteral.png" alt="creating an object literaly">
+                <p>In the above code notice how the object initializer is formatted literaly how the console interprets the object.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Object With Constructors</h1>
+                <p>Moving on we are going to take a look at creating objects through the use of constructors. These constructors look and are exactly like
+                    functions.The way of doing this is by creating the object type using a constructor function, this is extremely similar to the convetional way
+                    of creating objects in other languages. This may sound a bit confusing at first but a code example will offer clarification.
+                </p>
+                <p>Following the creation of the constructor, you then create an instance of the object through using the key word "new"</p>
+                <p>Now lets take a look at the code for doing this.</p>
+                <img class="centeredImg" src="images/objectConstructors.png" alt="creating an object through a constructor">
+                <p></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Object Classes</h1>
+                <p>Objects can be created throught the use of special functions within classes.</p>
+                <p>There are several ways of doing this for this example we are going to just declare a class, with some properties.</p>
+                <img class="centeredImg" src="images/objectClassDeclare.png" alt="declaring a class">
+                <p>The code above creates a Car class that has car properties then creates a class object set to car5.</p>
+                <h6>Sources</h6>
+                <p class="sourcePTag">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects">Mozilla</a>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Object Video Summary</h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dV2atmIl-QU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

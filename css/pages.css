@@ -31,6 +31,10 @@ h1,h2,h3,h4,h5,h6{
 
     padding-left: 8%;
 
+    padding-right: 8%;
+
+    /* display: inline; */
+
 }
 
 .row{
@@ -136,8 +140,28 @@ table th, td {
 
     list-style: none;
 
-    padding-left: 8%;
+    padding-left: 10%;
 
     padding-right: 8%;
+
+}
+.col-md-12{
+    padding-top: 3%;
+
+    padding-bottom: 3%;
+}
+.title{
+
+    word-wrap: break-word;
+
+    overflow-wrap: break-word;
+
+    -webkit-hyphens: auto;
+
+    -moz-hyphens: auto;
+
+    -ms-hyphens: auto;
+
+    hyphens: auto;
 
 }
