@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/pages.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> <!--Font from "FontJoy.com"-->
+    
+    <title>Prototypal Inheritance</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="./index.html"><img id="logo" src="logos/JoshuaTullyLogo2.png" alt="JoshuaTullyLogo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="websiteInfo.html">Website Info</a>
+              <!-- <a class="nav-link" href="https://github.com/jtully97">GitHub</a> -->
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                My Work
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="articles.html">Articles/Essays</a> 
+                <a class="dropdown-item" href="tutorials.html">Tutorials</a>
+                <a class="dropdown-item" href="classLessons.html">Class Lessons</a>
+                <a class="dropdown-item" href="objects.html">Object Talk</a>
+                <a class="dropdown-item" href="prototypalInheritance.html">Prototypal Inheritance</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="personal.html">Personal</a>
+              <!-- <a class="nav-link" href="https://www.linkedin.com/in/joshua-tully/">LinkedIn</a> -->
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0" method="GET" action="http://www.google.com/search">      
+            <input class="form-control mr-sm-2" type="text" name="q" placeholder="Search Google" aria-label="Go!">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Prototypal Inheritance</h1>
+            <p class="lead">Here we will discuss Prototypal Inheritance.</p>
+        </div>
+    </div>
+
+    <!-- Start of main content -->
+    <div class="mainContent">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Attributes</h1>
+                <p>
+                    In a HTML document there are attributes. Within the JavaScript DOM we can communicate to and change these attributes through properties
+                    and also use method calls that exist on elements, known as DOM nodes, when one makes a query. Attributes provide additional information
+                    about elements. These attributes are specefied within what is known as a start tag, they usually come in name/value pairs 
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Functions</h1>
+                <p>
+                    Function instances inherit methods and properties from <code>Function.prototype</code>. Typical with all constructors, you can change a constructor's prototype
+                    object to make changes to all Function instances.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1>`this`, in the scope of inheritance</h1>
+                <p>
+                    "When an inherited function is executed, the value of this points to the inheriting object, not to the prototype object where
+                    the function is an own property." <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain">-Mozilla.org</a>
+                </p>
+                <p>
+                    `this` refers to the object that is inherting the prototype attribute.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Syntactic Sugar</h1>
+                <p>
+                    Makes code easier for humans to read and or write, but that do not change the functionality or expressiveness of the language. It sometimes is
+                    reffered to as making the language more "sweet" for human use, concise, easy to read and grasps understanding when looked at.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Window Object</h1>
+                <p>
+                    The JavaScript window object has several properties and methods that can be used and invoked, but make sure to be carful for that fact that not all
+                    of them are supported in every browser. The window object is helpful in many ways, say you wan tot get the size of the users browser window, one would 
+                    use the window object to obtainn this kind of information.
+                </p>
+                <p>
+                    The window object has several properties. They include constructors, methods, and value properties. There are methods to manipulate the current browser
+                    tab, like opening and closing new pop-up windows, etc.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Global Object</h1>
+                <p>
+                    A global object is an object that always exists in the global scope. Within JavaScript, there is always a global object that is defined. In a web browser, when scripts create
+                    global variables, they are created as part of the global object, with that the global object provides variables and functions that can be accessed anywhere.
+                </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0Q5Hm0GULl8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
