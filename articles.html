@@ -35,6 +35,9 @@
                 <a class="dropdown-item" href="classLessons.html">Class Lessons</a>
                 <a class="dropdown-item" href="objects.html">Object Talk</a>
                 <a class="dropdown-item" href="prototypalInheritance.html">Prototypal Inheritance</a>
+                <a class="dropdown-item" href="modules.html">modules</a>
+                <a class="dropdown-item" href="higherOrderFunctions.html">Higer Order Functions</a>
+                <a class="dropdown-item" href="advancedArrayMethods.html">Advanced Array Methods</a>
               </div>
             </li>
             <li class="nav-item">
@@ -335,6 +338,33 @@
               Microservices are not nearly as tightly coupled as Monolithic applications, each services is not dependent on one another so making a single change wouldn't 
               effect the other services because they are standalone. One of the major advatages of Microservices is their scalability, you can scale up individual componets
               instead of having to scale up the application as a whole. Since each component can function without the other, if one compnent fails the others don't.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h1>In response to the following article.</h1>
+            <h5><a href="https://www.zachleat.com/web/mitt-romney-webfont-problem/">THE MITT ROMNEY WEB FONT PROBLEM</a></h5>
+            <br>
+            <p>
+              The problem here is that multiple font weights and styles of the same typeface were used together so in the case of the 
+              mitt romney webfont problem the word "not" was italicized so that when the web page was loading the flash of invisble text was in 
+              the place of the word not making the headline read "Mitt Romney is officially running for president." This created a lot of 
+              probles when reading the article for the text outside the italicized text was displayed before the italicized text making readers
+              beleive that Mitt Romney was officially running for president when infact he wasn't.
+            </p>
+            <p>
+              This problem can create confusion across a multitude of cases. One word can make a major diffrence in headlines and within text. 
+              failing at delivering proper information can cause credibility to diminish within a few views. All it take is for 
+              a developer to inappropriately apply a font and then the real issues happen when the mal practice gets noticed and 
+              captured by a user.
+            </p>
+            <p>
+              This can all be fixed in my personal opinion by testing a font out on multiple browsers. If there is a font and a case that 
+              must be used developers should take the steps to make sure that the font delivery doesn't run into discrepancies. Developer can 
+              eliminate the FOIT and switch it to a fallback font that loads while the selected font is loading. Also you can group your fonts 
+              so they load in a single repaint. One last way to get around this problem is through utilizing font-synthesis to show browser generated bold 
+              and italic fallbacks while the real web fonts load.
             </p>
           </div>
         </div>      

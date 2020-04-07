@@ -10,7 +10,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> <!--Font from "FontJoy.com"-->
 
-    <title>Modules</title>
+    <title>Higher Order Functions</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
@@ -54,31 +54,37 @@
 
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-4">Modules</h1>
-            <p class="lead">Here we will discuss Modules</p>
+            <h1 class="display-4">higher Order Functions</h1>
+            <p class="lead">Here we will discuss higher order functions.</p>
         </div>
     </div>
 
     <div class="mainContent">
         <div class="row">
             <div class="col-md-12">
-                <h1>Modules</h1>
+                <h1>Higher Order Functions</h1>
+                <p>A higher order function is a function that takes a function as an argument, or returns a function .</p>
+                <p>on the contray to a first order function that doesnt allow functions to be passed as arguments or return functions.</p>
                 <p>
-                    Modules are small units of independent, reusable code that can be used as the building blocks in creating
-                    a non-trivial Javascript application. Modules let the developer define private and public members separately, making
-                    it one of the more desired design patterns in JavaScript paradigm.
-                    <a href="https://www.geeksforgeeks.org/">geeksforgeeks.org</a>
+                    A good use of a higher order function, is when creating super complex functions you can break that complex function 
+                    into smaller functions and then piece those functions together to make that complex function you were looking for. They are 
+                    good at breaking up logic to simplify the level of complexity within code.
                 </p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/hAzYisrJxuU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>
+                    practicing the use of higher order functions limits the amount of bugs and also makes the code easier to read and understand.
+                </p>
+                <h3>Functions As Arguments</h3>
+                <img class="centeredImg" src="images/functionsAsArguments.png" alt="Function as argument">
+                <p>
+                    As you can see the filter function is using the function numIsEven as an argument. A function with a function as an argument.
+                </p>
+                <h3>Functions Returning Functions</h3>
+                <img class="centeredImg" src="images/returningFunction.png" alt="function returning a function">
+                <p>Here you can see add is a function asking for num1 which then returns a function asking for num2.</p>
             </div>
         </div>
-
-        <!-- <div class="row">
-            <div class="col-md-12">
-                
-            </div>
-        </div> -->
-
+    </div>
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

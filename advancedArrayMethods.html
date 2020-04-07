@@ -10,7 +10,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> <!--Font from "FontJoy.com"-->
 
-    <title>Modules</title>
+    <title>Advanced Array Methods</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
@@ -54,31 +54,93 @@
 
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-4">Modules</h1>
-            <p class="lead">Here we will discuss Modules</p>
+            <h1 class="display-4">Advanced Array Methods</h1>
+            <p class="lead">Here we will discuss advanced array methods.</p>
         </div>
     </div>
 
     <div class="mainContent">
         <div class="row">
             <div class="col-md-12">
-                <h1>Modules</h1>
-                <p>
-                    Modules are small units of independent, reusable code that can be used as the building blocks in creating
-                    a non-trivial Javascript application. Modules let the developer define private and public members separately, making
-                    it one of the more desired design patterns in JavaScript paradigm.
-                    <a href="https://www.geeksforgeeks.org/">geeksforgeeks.org</a>
-                </p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/hAzYisrJxuU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h1>pop</h1>
+                <p>The <code>pop()</code> method removes the last element contained in an array.</p>
+                <img class="centeredImg" src="images/pop.png" alt="pop()">
+                <p>The <code>pop()</code>returns the last value of an array as well so <code>cars.pop()</code> returns cruise.</p>
             </div>
         </div>
 
-        <!-- <div class="row">
+        <div class="row">
             <div class="col-md-12">
-                
+                <h1>push</h1>
+                <p>The <code>push()</code> adds a element to the end of an array. The <code>push()</code> 
+                    in itself returns the new length of the array.
+                </p>
+                <img class="centeredImg" src="images/push.png" alt="push()">
             </div>
-        </div> -->
+        </div>
 
+        <div class="row">
+            <div class="col-md-12">
+                <h1>shift</h1>
+                <p>The <code>shift()</code> method removes the first element of an array and moves all remaining elements to the left. This 
+                is equivalent to popping but instead working on the first element.</p>
+                <img class="centeredImg" src="images/shift.png" alt="shift()">
+                <p>The <code>shift()</code> returns the element that was removed.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h1>unshift</h1>
+                <p>
+                    The <code>unshift()</code> adds an element to the beginning of an array. The <code>unshift()</code> method 
+                    returns the new array length.
+                </p>
+                <img class="centeredImg" src="images/unshift.png" alt="unshift()">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h1>forEach</h1>
+                <p>
+                    The <code>forEach()</code> calls a function once for each array element.
+                </p>
+                <img class="centeredImg" src="images/foreach.png" alt="forEach()">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h1>findIndex</h1>
+                <p>
+                    The <code>findIndex()</code> method returns the first index of the first element in an array to satisfy the function.
+                </p>
+                <img class="centeredImg" src="images/findIndex.png" alt="findIndex()">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h1>filter</h1>
+                <p>
+                    The <code>filter()</code> method creates a new array with elements from another array that pass a test function.
+                </p>
+                <img class="centeredImg" src="images/filter.png" alt="filter()">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h1>find</h1>
+                <p>
+                    The <code>find()</code> method finds the first element in an array that passes a test then returns the value it found.
+                </p>
+                <img class="centeredImg" src="images/find.png" alt="find()">
+            </div>
+        </div>
+    </div>
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
