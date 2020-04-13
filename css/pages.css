@@ -165,3 +165,7 @@ table th, td {
     hyphens: auto;
 
 }
+.bold{
+
+    font-weight: bold;
+}

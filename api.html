@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/pages.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> <!--Font from "FontJoy.com"-->
+
+    <title>API's</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="./index.html"><img id="logo" src="logos/JoshuaTullyLogo2.png" alt="JoshuaTullyLogo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="websiteInfo.html">Website Info</a>
+              <!-- <a class="nav-link" href="https://github.com/jtully97">GitHub</a> -->
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                My Work
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="articles.html">Articles/Essays</a> 
+                <a class="dropdown-item" href="tutorials.html">Tutorials</a>
+                <a class="dropdown-item" href="classLessons.html">Class Lessons</a>
+                <a class="dropdown-item" href="objects.html">Object Talk</a>
+                <a class="dropdown-item" href="prototypalInheritance.html">Prototypal Inheritance</a>
+                <a class="dropdown-item" href="modules.html">modules</a>
+                <a class="dropdown-item" href="higherOrderFunctions.html">Higer Order Functions</a>
+                <a class="dropdown-item" href="advancedArrayMethods.html">Advanced Array Methods</a>
+                <a class="dropdown-item" href="api.html">API's</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="personal.html">Personal</a>
+              <!-- <a class="nav-link" href="https://www.linkedin.com/in/joshua-tully/">LinkedIn</a> -->
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0" method="GET" action="http://www.google.com/search">      
+            <input class="form-control mr-sm-2" type="text" name="q" placeholder="Search Google" aria-label="Go!">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">API's</h1>
+            <p class="lead">Here we will discuss API's</p>
+        </div>
+    </div>
+
+    <div class="mainContent">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>What Are Application Programming Interfaces?</h1>
+                <p>
+                    In simple terms an API is a messenger that takes requests and tells a system what you would like to do with those request,
+                    and then returns the response back to you.
+                </p>
+                <p>
+                    Take this example, when  you go to a restaurant and want to order food you make a request to a waiter. Shortly after
+                    your food arrives and your request is satisfied. Think of the waiter as the interface between you and the kitchen system.
+                    The waiter can be viewed as what an API does for applications.
+                </p>
+                <p>
+                    Similarly, an API lists a bunch of operations that are available for developers to use, along with a description with details of what they do.
+                    The developer doesn’t necessarily need to know how, for example, an OS builds and presents a user with a;
+                    “Submit Order” dialog box. They just need to know that it’s available for use witin the app they are building. 
+                </p>
+                <h6>Sources</h6>
+                <p class="sourcePTag">
+                    <a href="https://www.programmableweb.com/api-university/what-are-apis-and-how-do-they-work">programmableweb.com</a>
+                    <a href="https://www.freecodecamp.org/news/what-is-an-api-in-english-please-b880a3214a82/">freecodecamp.org</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainContent">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>What Is REST?</h1>
+                <p>
+                    "REST, or REpresentational State Transfer, is an architectural style for providing standards between computer systems on the web,
+                    making it easier for systems to communicate with each other." <a href="https://www.codecademy.com/articles/what-is-rest">-codeademy.com</a>
+                </p>
+                <h2>Priciples Guiding REST</h2>
+                <p>
+                   <span class="bold">Client–server</span> - REST architecture is composed of clients, servers, and resources, with that, requests are handled through HTTP.
+                </p>
+                <p>
+                    <span class="bold">Stateless</span> - Each request from client to the server must contain the necessary information to understand the request, and cannot take
+                     advantage of any stored context on the server. Session state is therefore kept entirely on the client.
+                </p>
+                <p>
+                    <span class="bold">Cacheable</span> - All resources should allow caching unless explicitly indicated that caching is not possible.
+                </p>
+                <p>
+                    <span class="bold">Uniform interface</span> - Resources should be uniquely identifiable through a single URL, and only by
+                    using the available methods of the network protocol.
+                </p>
+                <p>
+                    <span class="bold">Layered system</span> - Allows an architecture to be composed of hierarchical layers by constraining component
+                     behavior such that each component cannot “see” beyond the immediate layer with which they are interacting.
+                </p>
+                <p>
+                    <span class="bold">Code on demand</span> - In most cases code is a server will send back static representations of 
+                    resources in the form of XML or JSON. Although when essential servers can send back executable code.
+                </p>
+
+                <h6>Sources</h6>
+                <p class="sourcePTag">
+                    <a href="https://searchapparchitecture.techtarget.com/definition/RESTful-API">searchapparchitecture.techtarget.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainContent">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>All About Postman.</h1>
+                <p>
+                    Postman is a development tool that helps to build, test and modify APIs. With over 5 million users each month and over 250 million APIs,
+                    Postman has become an essential tool in developing APIs. It has the ability to make various types of HTTP requests like, GET, POST, PUT, PATCH.
+                </p>
+                <p>
+                    Postman allows for reliable services due to the ability to build your API before deploying your code. It helps
+                    speed up the development process by having front end and back end teams working in parallel. A spectacular feature within Postman is 
+                    the ability to explore the API by sending it different kinds of data to see what values are returned, which we will
+                    demo down below. I like to view Postman as sort of a github for API development, it allows for great collaboration and 
+                    sharing of APIs being deployed and developed.
+                </p>
+                <h6>Sources</h6>
+                <p class="sourcePTag">
+                    <a href="https://www.geeksforgeeks.org/introduction-postman-api-development/">geeksforgeeks.org</a> <br>
+                    <a href="https://www.postman.com/">postman.com</a>
+                </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4BI4S3benqQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
