@@ -123,3 +123,8 @@ body{
 }
 
 /* end of body */
+
+img.card-img-top {
+    display: none;
+    visibility: hidden;
+}
